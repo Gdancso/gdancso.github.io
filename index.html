@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>téglalap kerülete területe</title>
+    <link rel="stylesheet" href="sajat.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>  
+    <h1>téglalap kerülete területe</h1>
+    <div><span>A oldal</span></div>
+    <input type="text" id="szam1">
+    <div><span>B oldal</span></div>
+    <input type="text" id="szam2">
+    <button onclick="terulet()">terület</button>
+    <span id="kimenet"></span>
+    <script>
+        function terulet()
+        {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var terulet =parseInt(szam1) *parseInt(szam2);
+            document.getElementById("kimenet").innerHTML = terulet;
+            
+        }
+
+    </script>
+        <div><span>A oldal</span></div>
+        <input type="text" id="szam1">
+        <div><span>B oldal</span></div>
+        <input type="text" id="szam2">
+        <button onclick="kerulet()">kerület</button>
+        <span id="kimenet2"></span>
+        <script>
+            function kerulet()
+            {
+                var szam1 = document.getElementById("szam1").value;
+                var szam2 = document.getElementById("szam2").value;
+                var kerulet =2*(parseInt(szam1) +parseInt(szam2));
+                document.getElementById("kimenet2").innerHTML = kerulet;
+                
+            }
+    
+        </script>
+
+</body>
+</html>
